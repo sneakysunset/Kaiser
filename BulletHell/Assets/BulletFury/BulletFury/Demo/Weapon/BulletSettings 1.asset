@@ -24,7 +24,7 @@ MonoBehaviour:
   size: 0.25
   colliderSize: 1
   angularVelocity: 0
-  startColor: {r: 0.850945, g: 0, b: 1, a: 1}
+  startColor: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
   useColorOverTime: 1
   colorCurveUsage: 1
   colorCurveTime: 1
@@ -84,6 +84,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  useRotationForDirection: 1
   useSizeOverTime: 1
   sizeCurveUsage: 0
   sizeCurveTime: 0.5

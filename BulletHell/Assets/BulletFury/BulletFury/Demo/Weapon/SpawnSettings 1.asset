@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27a23ae2178c4258a35e0704bcdfe093, type: 3}
   m_Name: SpawnSettings 1
   m_EditorClassIdentifier: 
-  fireRate: 0.1
+  fireRate: 1
   burstCount: 1
   burstDelay: 0.45
   spawnDir: 2
   directionArc: 0
   randomise: 0
-  onEdge: 0
+  onEdge: 1
   numSides: 20
   numPerSide: 1
   radius: 1
