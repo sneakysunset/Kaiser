@@ -64,6 +64,32 @@ namespace BulletFury.Data
             var offset = arc / (2 * numSides) - ((0.5f * arc)) + 90f;
             var anglePerSide = arc / numSides;
 
+            if (numSides == 2)
+            {
+                Vector2 dir = Vector2.up;
+                
+                if (spawnDir == SpawnDir.Randomised)
+                {
+                    var rndAngle = rnd.Next() * directionArc * Mathf.Deg2Rad;
+                    dir = new Vector2(Mathf.Cos(rndAngle), Mathf.Sin(rndAngle));
+                }
+
+                // for every bullet we should spawn on this side of the shape
+                for (int i = 0; i < numPerSide; ++i)
+                {
+                    // position the current point a percentage of the way between each end of the side
+                    var t = i / (float) numPerSide;
+                    t += (1f / numPerSide) / 2f;
+                    var point = Vector2.Lerp(new Vector2(-1, 0), new Vector2(1, 0), t);
+                    point *= radius;
+
+                    // tell function what the point and direction is 
+                    onGetPoint?.Invoke(point, dir);
+                }
+
+                return;
+            }
+
             for (int i = 0; i < numSides; i++)
             {
                 var angle = (!randomise ? i * anglePerSide : rnd.Next() * arc) + offset;  

@@ -18,9 +18,9 @@ MonoBehaviour:
   spawnDir: 2
   directionArc: 0
   randomise: 0
-  onEdge: 1
+  onEdge: 0
   numSides: 20
   numPerSide: 1
   radius: 1
-  arc: 360
+  arc: 180
   isExpanded: 1

@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Reflection;
 using BulletFury.Rendering;
 using UnityEditor;
+using UnityEditor.VersionControl;
 using UnityEngine.Rendering;
 
 #if UNITY_2019_1_OR_NEWER
@@ -70,20 +71,11 @@ public class SetupWindow : EditorWindow
         {
             wordWrap = true
         };
-        EditorGUILayout.LabelField("Welcome to the BulletFury Demo", bold);
-        /* 
-         EditorGUILayout.LabelField("Welcome to BulletFury", bold);
-         */
+        EditorGUILayout.LabelField("Welcome to BulletFury", bold);
         EditorGUILayout.LabelField("This window will help make sure you can see the bullets.");
         EditorGUILayout.LabelField("Don't forget to use a material with the \"BulletFury/Unlit\" shader!", bold);
         EditorGUILayout.LabelField(
             "This enables GPU instancing, which the whole asset is built around. You can check out BulletFury/Rendering/BulletShader.shader to see what it does. You're welcome to write your own shader and use that, but be aware that it must support GPU instancing!");
-        EditorGUILayout.Space();
-        EditorGUILayout.LabelField(
-            "You can only make builds of your game with this asset for the duration of Bullet Hell Jam. You'll still be able to use the asset and create a game - but you'll need to purchase it on the Asset Store to export the project for any platform.");
-        EditorGUILayout.Space();
-        EditorGUILayout.LabelField("Just to reiterate:");
-        EditorGUILayout.LabelField("THIS IS A DEMO VERSION, NOT FOR COMMERCIAL USE", bold);
         EditorGUILayout.Space();
         var rp = GraphicsSettings.renderPipelineAsset;
         if (rp != null && rp is UniversalRenderPipelineAsset pipeline)
@@ -96,6 +88,7 @@ public class SetupWindow : EditorWindow
             if (_scriptableRenderData != null &&
                 _scriptableRenderData.rendererFeatures.Any(i => i is BulletFuryRenderFeature))
                 _hasRenderFeature = true;
+            
         }
 
         //if (_hasRenderFeature) Close();
@@ -136,8 +129,21 @@ public class SetupWindow : EditorWindow
             {
                 var feature = CreateInstance<BulletFuryRenderFeature>();
                 feature.name = "BulletFuryRenderFeature";
-                AssetDatabase.AddObjectToAsset(feature, rp);
-                _scriptableRenderData.rendererFeatures.Add(feature);
+                AssetDatabase.CreateAsset(feature, AssetDatabase.GetAssetPath(_scriptableRenderData).Replace(".asset", "-bulletfury.asset"));
+                //AssetDatabase.AddObjectToAsset(feature, rp);
+                
+                Debug.Log(AssetDatabase.GetAssetPath(_scriptableRenderData));
+                AssetDatabase.Refresh();
+                if (AssetDatabase.TryGetGUIDAndLocalFileIdentifier(feature, out var guid, out long localId))
+                {
+                    _scriptableRenderData.rendererFeatures.Add(AssetDatabase.LoadAssetAtPath<BulletFuryRenderFeature>(AssetDatabase.GUIDToAssetPath(guid)));
+                    _scriptableRenderData.SetDirty();
+                }
+                else
+                {
+                    Debug.LogError("Couldn't find asset");
+                }
+                AssetDatabase.SaveAssets();
             }
         }
     }

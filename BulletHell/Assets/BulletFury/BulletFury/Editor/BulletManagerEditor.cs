@@ -68,9 +68,10 @@ namespace BulletFury.Editor
             BulletFuryEditorUtils.DrawProperty(_seed);
             BulletFuryEditorUtils.DrawProperty(_randomiseSeedOnAwake);
             
+            EditorGUI.BeginDisabledGroup(((BulletManager)target).playingEditorAnimation);
             if (GUILayout.Button("Preview"))
                 ((BulletManager) target).AnimateAlongPath();
-            
+            EditorGUI.EndDisabledGroup();
             serializedObject.ApplyModifiedProperties();
         }
     }
