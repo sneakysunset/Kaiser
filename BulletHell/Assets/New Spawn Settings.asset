@@ -21,6 +21,6 @@ MonoBehaviour:
   onEdge: 0
   numSides: 1
   numPerSide: 0
-  radius: 1
+  radius: 0
   arc: 0
   isExpanded: 1

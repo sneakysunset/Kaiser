@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using BulletFury;
+using BulletFury.Data;
 
 public class BulletInstancier : MonoBehaviour
 {
@@ -34,10 +35,5 @@ public class BulletInstancier : MonoBehaviour
         yield return new WaitForSeconds(timer);
 
         StartCoroutine(BulletSpawn(timer));
-    }
-
-    public void Printer()
-    {
-        print(1);
     }
 }

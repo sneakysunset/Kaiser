@@ -20,4 +20,12 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.velocity = new Vector3(Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed, 0, Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.layer == 8)
+        {
+
+        }
+    }
 }

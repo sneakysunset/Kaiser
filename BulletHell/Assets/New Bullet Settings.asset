@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82dffc9fcebd41c894fc9c65a04b4cda, type: 3}
   m_Name: New Bullet Settings
   m_EditorClassIdentifier: 
-  mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  material: {fileID: 2100002, guid: efe9381559c516743bd05cef82f39ebb, type: 3}
+  mesh: {fileID: 0}
+  material: {fileID: 0}
   plane: 0
   waitToStart: 0
   timeToPlayWhileWaiting: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   useRotationForDirection: 1
-  useSizeOverTime: 1
+  useSizeOverTime: 0
   sizeCurveUsage: 0
   sizeCurveTime: 0
   sizeOverTime:
