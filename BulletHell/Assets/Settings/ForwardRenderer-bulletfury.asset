@@ -9,18 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27a23ae2178c4258a35e0704bcdfe093, type: 3}
-  m_Name: SpawnSettings 1
+  m_Script: {fileID: 11500000, guid: c51c17d8ad5e2467681d8d3fc828af75, type: 3}
+  m_Name: ForwardRenderer-bulletfury
   m_EditorClassIdentifier: 
-  fireRate: 0
-  burstCount: 1
-  burstDelay: 0.45
-  spawnDir: 2
-  directionArc: 0
-  randomise: 0
-  onEdge: 0
-  numSides: 20
-  numPerSide: 1
-  radius: 1
-  arc: 360
-  isExpanded: 1
+  m_Active: 1
+  renderPassEvent: 550

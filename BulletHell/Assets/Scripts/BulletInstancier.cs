@@ -17,13 +17,13 @@ public class BulletInstancier : MonoBehaviour
     void Start()
     {
         
-        //StartCoroutine(BulletSpawn(spawnTimer));
+        StartCoroutine(BulletSpawn(spawnTimer));
         
     }
 
     void Update()
     {
-        BulletSpawner1.Spawn(transform.position, forward: BulletSpawner1.Plane == BulletFury.Data.BulletPlane.XY ? transform.up : transform.forward);
+       // BulletSpawner1.Spawn(transform.position, forward: BulletSpawner1.Plane == BulletFury.Data.BulletPlane.XY ? transform.up : transform.forward);
     }
 
     IEnumerator BulletSpawn(float timer)
