@@ -26,7 +26,7 @@ public class BulletBehaviorSupplement : MonoBehaviour
             transform.Rotate(0, Time.deltaTime * rotateSpeed, 0);
 
         if (lookAtTarget && lookAtDelay == 0)
-            transform.LookAt(targetPos);
+            transform.LookAt(Target.position);
     }
 
     IEnumerator lookAtDelayer(float timer)
