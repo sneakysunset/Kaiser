@@ -13,19 +13,19 @@ MonoBehaviour:
   m_Name: BulletSettings 1
   m_EditorClassIdentifier: 
   mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  material: {fileID: 2100000, guid: c2e2ddcbdeab04711bb4faf283dd1910, type: 2}
+  material: {fileID: 2100000, guid: 3707ab250fc9a264d83076f8101ae4b3, type: 2}
   plane: 1
   waitToStart: 0
   timeToPlayWhileWaiting: 0.25
-  lifetime: 5
-  speed: 6
+  lifetime: 8
+  speed: 3
   moveWithTransform: 1
   damage: 1
-  size: 0.5
-  colliderSize: 1
+  size: 0.75
+  colliderSize: 0.5
   angularVelocity: 0
-  startColor: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
-  useColorOverTime: 1
+  startColor: {r: 0, g: 0, b: 0, a: 1}
+  useColorOverTime: 0
   colorCurveUsage: 1
   colorCurveTime: 1
   colorOverTime:
