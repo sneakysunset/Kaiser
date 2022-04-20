@@ -21,7 +21,7 @@ MonoBehaviour:
   speed: 3
   moveWithTransform: 1
   damage: 1
-  size: 0.75
+  size: 0.5
   colliderSize: 0.5
   angularVelocity: 0
   startColor: {r: 0, g: 0, b: 0, a: 1}
@@ -85,7 +85,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   useRotationForDirection: 1
-  useSizeOverTime: 1
+  useSizeOverTime: 0
   sizeCurveUsage: 0
   sizeCurveTime: 0.5
   sizeOverTime:
