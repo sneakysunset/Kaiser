@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82dffc9fcebd41c894fc9c65a04b4cda, type: 3}
-  m_Name: Poulpe3Pattern
+  m_Name: Star2Pattern
   m_EditorClassIdentifier: 
   mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
   material: {fileID: 2100000, guid: 3707ab250fc9a264d83076f8101ae4b3, type: 2}
@@ -18,13 +18,13 @@ MonoBehaviour:
   waitToStart: 0
   timeToPlayWhileWaiting: 0
   lifetime: 30
-  speed: 5
+  speed: 3
   moveWithTransform: 0
   damage: 1
   size: 1
   colliderSize: 0.45
   angularVelocity: 0
-  startColor: {r: 0, g: 0.7771216, b: 0.9622642, a: 1}
+  startColor: {r: 0.25420588, g: 0.4528302, b: 0, a: 1}
   useColorOverTime: 0
   colorCurveUsage: 0
   colorCurveTime: 0
