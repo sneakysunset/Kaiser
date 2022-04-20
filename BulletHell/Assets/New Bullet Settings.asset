@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82dffc9fcebd41c894fc9c65a04b4cda, type: 3}
   m_Name: New Bullet Settings
   m_EditorClassIdentifier: 
-  mesh: {fileID: 0}
-  material: {fileID: 0}
-  plane: 0
+  mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  material: {fileID: 2100000, guid: 3707ab250fc9a264d83076f8101ae4b3, type: 2}
+  plane: 1
   waitToStart: 0
   timeToPlayWhileWaiting: 0
-  lifetime: 1
-  speed: 10
+  lifetime: 50
+  speed: 5
   moveWithTransform: 0
   damage: 1
   size: 1
   colliderSize: 1
-  angularVelocity: 0
+  angularVelocity: 25
   startColor: {r: 1, g: 1, b: 1, a: 1}
   useColorOverTime: 0
   colorCurveUsage: 0
@@ -59,10 +59,28 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   useRotationOverTime: 0
   rotationCurveUsage: 0
-  rotationCurveTime: 0
+  rotationCurveTime: 45
   rotationOverTime:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
