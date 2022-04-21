@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4508168697103779690}
   - component: {fileID: 2451394821902207222}
   m_Layer: 0
-  m_Name: Poulpe3
+  m_Name: MantaRay3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,12 +51,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxBullets: 1023
   drawPriority: 0
-  bulletSettings: {fileID: 11400000, guid: 65acf0745c91c394390efa7c164468de, type: 2}
-  spawnSettings: {fileID: 11400000, guid: e6dd27682e22fa441ac67162c40ccf92, type: 2}
+  bulletSettings: {fileID: 11400000, guid: 76b4857b564ce5a40bc719e2cf2312db, type: 2}
+  spawnSettings: {fileID: 11400000, guid: b3243e56edfc5154a8ad765db0f8dfaf, type: 2}
   currentActiveBullets: 0
   maxActiveBullets: 0
   seed: 
-  randomiseSeedOnAwake: 0
+  randomiseSeedOnAwake: 1
   playingEditorAnimation: 0
   OnBulletDied:
     m_PersistentCalls:
@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e95aee40187a5dd40b0db680a6913639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTimer: 3
+  spawnTimer: 4
   BulletSpawner1: {fileID: 3148693041566950101}
 --- !u!114 &1420928033628192556
 MonoBehaviour:
@@ -96,9 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 975b879c001c68b4e9072c70ec5a01a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotate: 0
-  rotateSpeed: 0
-  lookAtTarget: 1
+  rotate: 1
+  rotateSpeed: 45
+  lookAtTarget: 0
   lookAtDelay: 0
   Target: {fileID: 0}
 --- !u!114 &4111001494055988352

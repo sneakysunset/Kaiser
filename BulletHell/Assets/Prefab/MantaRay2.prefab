@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4508168697103779690}
   - component: {fileID: 2451394821902207222}
   m_Layer: 0
-  m_Name: Poulpe3
+  m_Name: MantaRay2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,12 +51,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxBullets: 1023
   drawPriority: 0
-  bulletSettings: {fileID: 11400000, guid: 65acf0745c91c394390efa7c164468de, type: 2}
-  spawnSettings: {fileID: 11400000, guid: e6dd27682e22fa441ac67162c40ccf92, type: 2}
+  bulletSettings: {fileID: 11400000, guid: 4960294b879d2f64985b7a5b7980135d, type: 2}
+  spawnSettings: {fileID: 11400000, guid: 4596ec16e1bd5454d95cd9e43694f8f8, type: 2}
   currentActiveBullets: 0
   maxActiveBullets: 0
   seed: 
-  randomiseSeedOnAwake: 0
+  randomiseSeedOnAwake: 1
   playingEditorAnimation: 0
   OnBulletDied:
     m_PersistentCalls:
