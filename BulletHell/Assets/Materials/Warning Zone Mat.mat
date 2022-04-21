@@ -36,7 +36,10 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    m_Colors: []
+    - _Speed: 1
+    - __filling: 1
+    m_Colors:
+    - _BaseColor: {r: 1, g: 0, b: 0, a: 0.050980393}
   m_BuildTextureStacks: []
 --- !u!114 &168710340459325351
 MonoBehaviour:
