@@ -18,6 +18,7 @@ public class BarriereMovement : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(endSceneTimer(timer));
         transform.Rotate(0, 45, 0);
         Direction = transform.forward;
         transform.Rotate(0, -45, 0);

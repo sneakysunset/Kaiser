@@ -9,11 +9,6 @@ public class BulletInstancier : MonoBehaviour
     public float spawnTimer;
     public BulletManager BulletSpawner1;
 
-    void Awake()
-    {
-        //BulletSpawner1.Spawn(transform.position, forward: BulletSpawner1.Plane == BulletFury.Data.BulletPlane.XY ? transform.up : transform.forward);
-
-    }
 
     private void OnEnable()
     {
@@ -26,10 +21,6 @@ public class BulletInstancier : MonoBehaviour
         StartCoroutine(BulletSpawn(spawnTimer));       
     }
 
-    void Update()
-    {
-       // BulletSpawner1.Spawn(transform.position, forward: BulletSpawner1.Plane == BulletFury.Data.BulletPlane.XY ? transform.up : transform.forward);
-    }
 
     IEnumerator BulletSpawn(float timer)
     {

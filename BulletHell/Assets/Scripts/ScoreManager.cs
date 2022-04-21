@@ -31,8 +31,7 @@ public class ScoreManager : MonoBehaviour
 
     public void endLevel()
     {
-        print(11);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        GetComponent<Pause>().IsEndLevel();
     }
 }
     
