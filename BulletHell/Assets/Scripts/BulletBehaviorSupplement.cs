@@ -18,12 +18,21 @@ public class BulletBehaviorSupplement : MonoBehaviour
     [SerializeField] public bool bomb;
     [SerializeField, HideInInspector] public BulletManager BombBullets;
     public bool movingSpawner;
+    public bool endlessSpawn;
     [SerializeField, HideInInspector] public PathCreator pathCrea;
+    [SerializeField, HideInInspector] public float timeBeforeStopSpawning;
     [SerializeField, HideInInspector] [Range(0, 1)] public float speed;
     Vector3[] pathPoints;
     float incr;
     int pointIndex;
 
+    private void OnEnable()
+    {
+        if (!endlessSpawn)
+        {
+            StartCoroutine(endSpawn(timeBeforeStopSpawning));
+        }
+    }
 
     private void Start()
     {
@@ -59,6 +68,14 @@ public class BulletBehaviorSupplement : MonoBehaviour
         if (movingSpawner)
             MoveSpawner();
     }
+
+
+    IEnumerator endSpawn(float timer)
+    {
+        yield return new WaitForSeconds(timeBeforeStopSpawning);
+        GetComponent<BulletInstancier>().spawning = false;
+    }
+
 
     void MoveSpawner()
     {
@@ -113,6 +130,11 @@ public class OnGUIEditorHide : Editor
         if (script.rotate)
         {
             script.rotateSpeed = EditorGUILayout.FloatField("rotateSpeed",script.rotateSpeed);
+        }
+
+        if (!script.endlessSpawn)
+        {
+            script.timeBeforeStopSpawning = EditorGUILayout.FloatField("Timer Before Stop Spawning", script.timeBeforeStopSpawning);
         }
 
         if (script.lookAtTarget)
