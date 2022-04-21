@@ -15,11 +15,15 @@ public class BulletInstancier : MonoBehaviour
 
     }
 
+    private void OnEnable()
+    {
+        StartCoroutine(BulletSpawn(spawnTimer));
+    }
+
     void Start()
     {
         
-        StartCoroutine(BulletSpawn(spawnTimer));
-        
+        StartCoroutine(BulletSpawn(spawnTimer));       
     }
 
     void Update()
