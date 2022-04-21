@@ -7,6 +7,28 @@ public class Path
 {
     [SerializeField, HideInInspector]
     List<Vector3> points;
+    [HideInInspector] public Vector3[] travelPoints;
+
+
+
+    public Vector3 Lerp(Vector3 a, Vector3 b, float t)
+    {
+        return a + (b - a) * t;
+    }
+
+    public Vector3 QuadraticCurve(Vector3 a, Vector3 b, Vector3 c, float t)
+    {
+        Vector3 ab = Lerp(a, b, t);
+        Vector3 bc = Lerp(b, c, t);
+        return Lerp(ab, bc, t);
+    }
+
+    public Vector3 CubicCurve(Vector3 a, Vector3 b, Vector3 c, Vector3 d, float t)
+    {
+        Vector3 abc = QuadraticCurve(a, b, c, t);
+        Vector3 bcd = QuadraticCurve(b, c, d, t);
+        return Lerp(abc, bcd, t);
+    }
 
     public Path(Vector3 centre)
     {
