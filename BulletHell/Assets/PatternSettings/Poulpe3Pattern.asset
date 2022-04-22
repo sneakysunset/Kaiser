@@ -18,13 +18,13 @@ MonoBehaviour:
   waitToStart: 0
   timeToPlayWhileWaiting: 0
   lifetime: 30
-  speed: 15
+  speed: 10
   moveWithTransform: 0
   damage: 1
   size: 1
   colliderSize: 0.45
   angularVelocity: 0
-  startColor: {r: 1, g: 1, b: 1, a: 1}
+  startColor: {r: 1, g: 0, b: 0, a: 1}
   useColorOverTime: 0
   colorCurveUsage: 0
   colorCurveTime: 0

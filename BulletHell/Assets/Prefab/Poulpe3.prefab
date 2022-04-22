@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4111001494055988352}
   - component: {fileID: 4508168697103779690}
   - component: {fileID: 2451394821902207222}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Poulpe3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

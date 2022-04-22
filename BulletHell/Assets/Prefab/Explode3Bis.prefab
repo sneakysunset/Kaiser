@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4288741058735493929}
   - component: {fileID: 1420928033628192556}
   - component: {fileID: 4111001494055988352}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Explode3Bis
   m_TagString: Untagged
   m_Icon: {fileID: 0}

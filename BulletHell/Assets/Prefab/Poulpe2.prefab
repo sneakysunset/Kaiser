@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4111001494055988352}
   - component: {fileID: 4508168697103779690}
   - component: {fileID: 2451394821902207222}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Poulpe2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ MonoBehaviour:
   rotateSpeed: 0
   lookAtTarget: 1
   lookAtDelay: 0
-  Target: {fileID: 5554685457240686436, guid: a63da2c488c84894fb423559a30cfcd0, type: 3}
+  Target: {fileID: 0}
   bomb: 0
   BombBullets: {fileID: 0}
   movingSpawner: 0
