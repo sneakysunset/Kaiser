@@ -10,9 +10,9 @@ public class BulletInstancier : MonoBehaviour
     public BulletManager BulletSpawner1;
     [SerializeField, HideInInspector]public bool spawning;
     [SerializeField, HideInInspector]public bool disappear;
-    public Vector3 startLerp;
-    public Vector3 endLerp;
-    public float t = 0;
+    Vector3 startLerp;
+    Vector3 endLerp;
+    float t = 0;
     private void OnEnable()
     {
         spawning = true;

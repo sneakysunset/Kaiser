@@ -84,6 +84,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnTimer: 1.5
   BulletSpawner1: {fileID: 2184321466603531898}
+  spawning: 0
+  disappear: 0
 --- !u!114 &2184321466603531910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,6 +103,13 @@ MonoBehaviour:
   lookAtTarget: 1
   lookAtDelay: 0
   Target: {fileID: 5554685457240686436, guid: a63da2c488c84894fb423559a30cfcd0, type: 3}
+  bomb: 0
+  BombBullets: {fileID: 0}
+  movingSpawner: 0
+  endlessSpawn: 0
+  pathCrea: {fileID: 0}
+  timeBeforeStopSpawning: 0
+  speed: 0
 --- !u!114 &2184321466603531908
 MonoBehaviour:
   m_ObjectHideFlags: 0
