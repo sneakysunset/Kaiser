@@ -30,7 +30,7 @@ public class Pause : MonoBehaviour
             Time.timeScale = 0;
             EndLevelMenu.SetActive(true);
         }
-        else
+        else if(!isEndLevel && !isPaused)
         {
             EndLevelMenu.SetActive(false);
             Time.timeScale = 1;

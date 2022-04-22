@@ -8,17 +8,15 @@ public class BulletInstancier : MonoBehaviour
 {
     public float spawnTimer;
     public BulletManager BulletSpawner1;
-
-
+    [SerializeField, HideInInspector]public bool spawning;
+    [SerializeField, HideInInspector]public bool disappear;
+    public Vector3 startLerp;
+    public Vector3 endLerp;
+    public float t = 0;
     private void OnEnable()
     {
+        spawning = true;
         StartCoroutine(BulletSpawn(spawnTimer));
-    }
-
-    void Start()
-    {
-        
-        StartCoroutine(BulletSpawn(spawnTimer));       
     }
 
 
@@ -29,6 +27,23 @@ public class BulletInstancier : MonoBehaviour
 
         yield return new WaitForSeconds(timer);
 
-        StartCoroutine(BulletSpawn(timer));
+        if(spawning)
+          StartCoroutine(BulletSpawn(timer));
+
+        if (!spawning)
+        {
+            disappear = true;
+            startLerp = transform.parent.position;
+            endLerp = transform.parent.position - new Vector3(0, 20, 0);
+        }
+    }
+
+    private void Update()
+    {
+        if (disappear)
+        {
+            t += Time.deltaTime;
+            transform.parent.position = Vector3.Lerp(startLerp, endLerp, t);
+        }
     }
 }
