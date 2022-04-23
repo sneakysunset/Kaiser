@@ -43,6 +43,7 @@ public class ScoreManager : MonoBehaviour
 
     public void endLevel()
     {
+        PlayerRenderer.gameObject.SetActive(false);
         GetComponent<Pause>().IsEndLevel();
     }
 
