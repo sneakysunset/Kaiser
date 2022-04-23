@@ -48,6 +48,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _FoamSize: 2.08
+    - _NormalIntensity: 40
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Water_Speed: 1
