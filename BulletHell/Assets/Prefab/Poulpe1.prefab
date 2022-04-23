@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2184321466603531908}
   - component: {fileID: 2184321466603531896}
   - component: {fileID: 2184321466603531899}
+  - component: {fileID: 665707779785211881}
   m_Layer: 7
   m_Name: Poulpe1
   m_TagString: Untagged
@@ -67,7 +68,19 @@ MonoBehaviour:
       m_Calls: []
   OnBulletSpawned:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 665707779785211881}
+        m_TargetAssemblyTypeName: SoundPlayer, Assembly-CSharp
+        m_MethodName: PlayOneShotPoulpe
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnWeaponFired:
     m_PersistentCalls:
       m_Calls: []
@@ -173,6 +186,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2184321466603531901}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &665707779785211881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2184321466603531901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f983a17f701984246bcfc432ec352e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4387057650643694224
 PrefabInstance:
   m_ObjectHideFlags: 0

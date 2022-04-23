@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4111001494055988352}
   - component: {fileID: 4508168697103779690}
   - component: {fileID: 2451394821902207222}
+  - component: {fileID: 5770294089144787646}
   m_Layer: 7
   m_Name: Star1
   m_TagString: Untagged
@@ -54,9 +55,9 @@ MonoBehaviour:
   drawPriority: 0
   bulletSettings: {fileID: 11400000, guid: a94322cf9f3eb834fb3034a1a2e6695f, type: 2}
   spawnSettings: {fileID: 11400000, guid: 3c2502edee4156247bcd2dba2a0baf5b, type: 2}
-  currentActiveBullets: 0
-  maxActiveBullets: 0
-  seed: 
+  currentActiveBullets: 1023
+  maxActiveBullets: 1023
+  seed: 90e56c5b-5673-48ef-9119-0c0b41100de3
   randomiseSeedOnAwake: 1
   playingEditorAnimation: 0
   OnBulletDied:
@@ -67,7 +68,19 @@ MonoBehaviour:
       m_Calls: []
   OnBulletSpawned:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5770294089144787646}
+        m_TargetAssemblyTypeName: SoundPlayer, Assembly-CSharp
+        m_MethodName: PlayOneShotStar
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   OnWeaponFired:
     m_PersistentCalls:
       m_Calls: []
@@ -173,6 +186,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5770294089144787646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3412081249407975303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f983a17f701984246bcfc432ec352e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5612068898354866006
 PrefabInstance:
   m_ObjectHideFlags: 0
