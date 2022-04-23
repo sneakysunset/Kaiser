@@ -8,24 +8,17 @@ public class BulletInstancier : MonoBehaviour
 {
     public float spawnTimer;
     public BulletManager BulletSpawner1;
-
-    void Awake()
+    [SerializeField, HideInInspector]public bool spawning;
+    [SerializeField, HideInInspector]public bool disappear;
+    Vector3 startLerp;
+    Vector3 endLerp;
+    float t = 0;
+    private void OnEnable()
     {
-        //BulletSpawner1.Spawn(transform.position, forward: BulletSpawner1.Plane == BulletFury.Data.BulletPlane.XY ? transform.up : transform.forward);
-
-    }
-
-    void Start()
-    {
-        
+        spawning = true;
         StartCoroutine(BulletSpawn(spawnTimer));
-        
     }
 
-    void Update()
-    {
-       // BulletSpawner1.Spawn(transform.position, forward: BulletSpawner1.Plane == BulletFury.Data.BulletPlane.XY ? transform.up : transform.forward);
-    }
 
     IEnumerator BulletSpawn(float timer)
     {
@@ -34,6 +27,24 @@ public class BulletInstancier : MonoBehaviour
 
         yield return new WaitForSeconds(timer);
 
-        StartCoroutine(BulletSpawn(timer));
+        if(spawning)
+          StartCoroutine(BulletSpawn(timer));
+        else if (!spawning)
+        {
+            GetComponent<MeshRenderer>().enabled = false;
+            disappear = true;
+            startLerp = transform.position;
+            endLerp = transform.position - new Vector3(0, -20, 0);
+        }
+    }
+
+    private void Update()
+    {
+        if (disappear)
+        {
+            t += Time.deltaTime;
+            
+            transform.position = Vector3.Lerp(startLerp, endLerp, t);
+        }
     }
 }
