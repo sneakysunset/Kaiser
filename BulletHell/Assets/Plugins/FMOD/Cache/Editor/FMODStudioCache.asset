@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: ../FMOD/FMODDUJEU/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637863550945804108
+  lastModified: 637863566935011112
   FileSizes:
   - Name: Desktop
-    Value: 948640
+    Value: 973952
   Exists: 1
 --- !u!114 &-6399870604923897683
 MonoBehaviour:
@@ -62,10 +62,10 @@ MonoBehaviour:
   Path: ../FMOD/FMODDUJEU/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637863550945834032
+  lastModified: 637863566935061001
   FileSizes:
   - Name: Desktop
-    Value: 1280
+    Value: 1420
   Exists: 1
 --- !u!114 &-5104390847612326008
 MonoBehaviour:
@@ -94,7 +94,31 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 750
---- !u!114 &-3815507348509924697
+--- !u!114 &-954221518277967050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OST1/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3088258849
+    data2: 667943809
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-900257067352929188
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,14 +128,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Spawn
+  m_Name: event:/UI/SFX Button back
   m_EditorClassIdentifier: 
-  Path: event:/Spawn
+  Path: event:/UI/SFX Button back
   Guid:
-    Data1: -1816051921
-    Data2: 1171500661
-    Data3: 887827361
-    Data4: 922396088
+    Data1: 1598258214
+    Data2: 1220864110
+    Data3: -399059049
+    Data4: -376185180
   Banks:
   - {fileID: -7370572900894438393}
   IsStream: 0
@@ -137,7 +161,6 @@ MonoBehaviour:
   - {fileID: -6399870604923897683}
   - {fileID: -7370572900894438393}
   EditorEvents:
-  - {fileID: -3815507348509924697}
   - {fileID: 7710088123984308342}
   - {fileID: 2369600410177330677}
   - {fileID: -7375789834821989091}
@@ -149,12 +172,16 @@ MonoBehaviour:
   - {fileID: 4488020930041223819}
   - {fileID: 629472593808330120}
   - {fileID: 5888808981429222662}
-  EditorParameters: []
+  - {fileID: -900257067352929188}
+  - {fileID: 1859064923892189642}
+  - {fileID: 879142376165404890}
+  EditorParameters:
+  - {fileID: 5931342767444341552}
   MasterBanks:
   - {fileID: -7370572900894438393}
   StringsBanks:
   - {fileID: -6399870604923897683}
-  cacheTime: 637863550945834032
+  cacheTime: 637863566935061001
   cacheVersion: 10
 --- !u!114 &629472593808330120
 MonoBehaviour:
@@ -183,6 +210,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &879142376165404890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/SFX Button
+  m_EditorClassIdentifier: 
+  Path: event:/UI/SFX Button
+  Guid:
+    Data1: 1507154155
+    Data2: 1222926262
+    Data3: 174805126
+    Data4: 1409976778
+  Banks:
+  - {fileID: -7370572900894438393}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &1588797327467967805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,6 +255,33 @@ MonoBehaviour:
     Data2: 1303411739
     Data3: -1549076603
     Data4: -164740291
+  Banks:
+  - {fileID: -7370572900894438393}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &1859064923892189642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ennemy/Spawn
+  m_EditorClassIdentifier: 
+  Path: event:/Ennemy/Spawn
+  Guid:
+    Data1: -1816051921
+    Data2: 1171500661
+    Data3: 887827361
+    Data4: 922396088
   Banks:
   - {fileID: -7370572900894438393}
   IsStream: 0
@@ -341,10 +422,35 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -954221518277967050}
   MinDistance: 1
   MaxDistance: 20
   Length: 56064
+--- !u!114 &5931342767444341552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: parameter:/Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3088258849
+    data2: 667943809
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &7710088123984308342
 MonoBehaviour:
   m_ObjectHideFlags: 0
