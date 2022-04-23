@@ -29,12 +29,12 @@ public class BulletInstancier : MonoBehaviour
 
         if(spawning)
           StartCoroutine(BulletSpawn(timer));
-
-        if (!spawning)
+        else if (!spawning)
         {
+            GetComponent<MeshRenderer>().enabled = false;
             disappear = true;
-            startLerp = transform.parent.position;
-            endLerp = transform.parent.position - new Vector3(0, 20, 0);
+            startLerp = transform.position;
+            endLerp = transform.position - new Vector3(0, -20, 0);
         }
     }
 
@@ -43,7 +43,8 @@ public class BulletInstancier : MonoBehaviour
         if (disappear)
         {
             t += Time.deltaTime;
-            transform.parent.position = Vector3.Lerp(startLerp, endLerp, t);
+            
+            transform.position = Vector3.Lerp(startLerp, endLerp, t);
         }
     }
 }

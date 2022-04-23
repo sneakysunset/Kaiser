@@ -24,9 +24,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer == 8)
+        if (collision.gameObject.layer == 7)
         {
-
+            FindObjectOfType<ScoreManager>().reduceHP(1);
         }
     }
+
+   
 }
