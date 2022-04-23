@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class ScoreManager : MonoBehaviour
 {
     public TextMeshProUGUI hpText;
+    public Slider progressionSlider;
     [HideInInspector] public int hpValue;
 
     private void Start()
@@ -18,7 +19,7 @@ public class ScoreManager : MonoBehaviour
     private void Update()
     {
         hpText.text = "" + hpValue;
-
+        progressionSlider.value += Time.deltaTime / FindObjectOfType<BarriereMovement>().timer;
         if (hpValue <= 0)
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

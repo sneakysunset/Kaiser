@@ -9,11 +9,13 @@ public class BarriereMovement : MonoBehaviour
     Vector3 Direction;
     public float timer;
     ScoreManager scoreM;
-    
+    Pause pause;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         scoreM = FindObjectOfType<ScoreManager>();
+        pause = scoreM.GetComponent<Pause>();
     }
 
     private void Start()
@@ -24,6 +26,8 @@ public class BarriereMovement : MonoBehaviour
         transform.Rotate(0, -45, 0);
     }
 
+
+
     private void FixedUpdate()
     {
         rb.velocity = Direction * speed * Time.deltaTime;
@@ -32,7 +36,8 @@ public class BarriereMovement : MonoBehaviour
     IEnumerator endSceneTimer(float timeBeforeEnd)
     {
         yield return new WaitForSeconds(timeBeforeEnd);
-        scoreM.endLevel();
+        print(11);
+        pause.IsEndLevel();
     }
 
     private void OnCollisionEnter(Collision collision)
