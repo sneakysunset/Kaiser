@@ -20,6 +20,7 @@ public class BarriereMovement : MonoBehaviour
 
     private void Start()
     {
+        Sound.sound.PlayOneShot("event:/Music/OST1");
         StartCoroutine(endSceneTimer(timer));
         transform.Rotate(0, 45, 0);
         Direction = transform.forward;

@@ -34,6 +34,7 @@ public class ScoreManager : MonoBehaviour
     {
         if (!safe)
         {
+            Sound.sound.PlayOneShot("event:/Player/Damage");
             Hearts[hpValue - 1].gameObject.SetActive(false);
             hpValue -= hpLoss;
             StartCoroutine(InvicibilityFrames(SafeTimer));

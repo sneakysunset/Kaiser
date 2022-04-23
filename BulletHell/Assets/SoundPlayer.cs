@@ -5,10 +5,8 @@ using BulletFury.Data;
 
 public class SoundPlayer : MonoBehaviour
 {
-   public static void PlayOneShot(string eventName)
-   {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/" + eventName);
-   }
+    
+   
 
     public void PlayOneShotStar(int i, BulletContainer bC)
     {

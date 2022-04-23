@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: ../FMOD/FMODDUJEU/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637863526518759826
+  lastModified: 637863541822878564
   FileSizes:
   - Name: Desktop
-    Value: 181024
+    Value: 1208192
   Exists: 1
 --- !u!114 &-6399870604923897683
 MonoBehaviour:
@@ -62,10 +62,10 @@ MonoBehaviour:
   Path: ../FMOD/FMODDUJEU/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637863526518789752
+  lastModified: 637863541822898506
   FileSizes:
   - Name: Desktop
-    Value: 1240
+    Value: 1280
   Exists: 1
 --- !u!114 &-5104390847612326008
 MonoBehaviour:
@@ -148,12 +148,13 @@ MonoBehaviour:
   - {fileID: -5104390847612326008}
   - {fileID: 4488020930041223819}
   - {fileID: 629472593808330120}
+  - {fileID: 5888808981429222662}
   EditorParameters: []
   MasterBanks:
   - {fileID: -7370572900894438393}
   StringsBanks:
   - {fileID: -6399870604923897683}
-  cacheTime: 637863526518789752
+  cacheTime: 637863541822898506
   cacheVersion: 10
 --- !u!114 &629472593808330120
 MonoBehaviour:
@@ -317,6 +318,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5500
+--- !u!114 &5888808981429222662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/OST1
+  m_EditorClassIdentifier: 
+  Path: event:/Music/OST1
+  Guid:
+    Data1: -919674292
+    Data2: 1307622943
+    Data3: -2080198002
+    Data4: -2126116517
+  Banks:
+  - {fileID: -7370572900894438393}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 79490
 --- !u!114 &7710088123984308342
 MonoBehaviour:
   m_ObjectHideFlags: 0
