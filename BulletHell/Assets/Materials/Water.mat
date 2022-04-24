@@ -49,13 +49,13 @@ Material:
     m_Floats:
     - _FoamSize: 1.38
     - _Metallic: 0.81
-    - _NormalIntensity: 41.2
+    - _NormalIntensity: 36.9
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Smoothness: 0
-    - _Water_Level: 1.509
+    - _Water_Level: 1.74
     - _Water_Speed: 1
-    - _WavesSize: 0.06
+    - _WavesSize: 0.04
     m_Colors:
     - _BaseColor: {r: 0, g: 0.08219698, b: 0.20754719, a: 1}
     - _DeepWater: {r: 0, g: 0.015094344, b: 0.0754717, a: 1}
