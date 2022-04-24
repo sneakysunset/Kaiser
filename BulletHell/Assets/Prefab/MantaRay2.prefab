@@ -100,6 +100,7 @@ MonoBehaviour:
   BulletSpawner1: {fileID: 3148693041566950101}
   spawning: 0
   disappear: 0
+  pSys: {fileID: 2954091556473693444, guid: 0e4237037af8d39408498a0d8688e394, type: 3}
 --- !u!114 &1420928033628192556
 MonoBehaviour:
   m_ObjectHideFlags: 0
