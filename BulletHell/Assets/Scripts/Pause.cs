@@ -22,11 +22,16 @@ public class Pause : MonoBehaviour
             Time.timeScale = 0;
             if(!PauseMenu.activeSelf)
             Sound.sound.PlayOneShot("event:/UI/SFX Button");
+            Sound.sound.Music.setPaused(true);
+            
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Paused", 1);
             PauseMenu.SetActive(true);
         }
         else
         {
             PauseMenu.SetActive(false);
+            Sound.sound.Music.setPaused(false);
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Paused", 0);
             Time.timeScale = 1;
         }
 

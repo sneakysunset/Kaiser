@@ -43,6 +43,10 @@ public class ScoreManager : MonoBehaviour
 
     public void endLevel()
     {
+        Sound.sound.PauseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Sound.sound.Music.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Sound.sound.PauseMusic.release();
+        Sound.sound.Music.release();
         PlayerRenderer.gameObject.SetActive(false);
         GetComponent<Pause>().IsEndLevel();
     }

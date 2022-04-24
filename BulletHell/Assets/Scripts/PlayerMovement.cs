@@ -29,12 +29,7 @@ public class PlayerMovement : MonoBehaviour
             FindObjectOfType<ScoreManager>().reduceHP(1);
         }
 
-        if(collision.gameObject.layer == 9)
-        {
 
-
-            Destroy(collision.transform.gameObject);
-        }
     }
 
    
