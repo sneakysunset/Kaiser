@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{00c638b6-abb3-4464-85fd-67589ca3d46c}">
 		<property name="name">
-			<value>Bullet_Hell_OST1 Pause</value>
+			<value>OST1_Pause</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
