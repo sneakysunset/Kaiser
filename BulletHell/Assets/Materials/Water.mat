@@ -55,7 +55,7 @@ Material:
     - _Water_Speed: 1
     - _WavesSize: 0.06
     m_Colors:
-    - _BaseColor: {r: 0, g: 0.1584906, b: 0.3962264, a: 1}
-    - _DeepWater: {r: 0, g: 0.049575847, b: 0.254717, a: 1}
-    - _FoamColor: {r: 0.19490923, g: 0.3121078, b: 0.5660378, a: 1}
+    - _BaseColor: {r: 0, g: 0.08219698, b: 0.20754719, a: 1}
+    - _DeepWater: {r: 0, g: 0.015094344, b: 0.0754717, a: 1}
+    - _FoamColor: {r: 0.08530617, g: 0.13937347, b: 0.254717, a: 1}
   m_BuildTextureStacks: []

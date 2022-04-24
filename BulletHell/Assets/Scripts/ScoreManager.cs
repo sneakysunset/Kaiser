@@ -54,9 +54,9 @@ public class ScoreManager : MonoBehaviour
     IEnumerator InvicibilityFrames(float safeTimer)
     {
         safe = true;
-        PlayerRenderer.material.color = Color.blue;
+        //PlayerRenderer.material.color = Color.blue;
         yield return new WaitForSeconds(safeTimer);
-        PlayerRenderer.material.color = Color.black;
+        //PlayerRenderer.material.color = Color.black;
         safe = false;
     }
 }

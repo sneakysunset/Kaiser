@@ -1,18 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class HotelManager : MonoBehaviour
 {
-    [HideInInspector] public int hotelValue = 0;
-    public GameObject[] TimeLines = new GameObject[4];
-    public void HotelValueIncr()
-    {
-        hotelValue++;
-    }
+     public int hotelValue = 0;
+    public GameObject[] TimeLines ;
 
     public void TimeLineActivation()
     {
-        TimeLines[hotelValue-1].SetActive(true);
+        TimeLines[hotelValue-1].GetComponent<PlayableDirector>().enabled = true;
     }
 }
