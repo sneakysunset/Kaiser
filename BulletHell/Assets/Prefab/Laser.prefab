@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 7934679508351492585}
   - component: {fileID: 7934679508351492584}
   - component: {fileID: 2465730742465549442}
+  - component: {fileID: -2373806207651534423}
   m_Layer: 7
   m_Name: Laser
   m_TagString: Untagged
@@ -151,6 +152,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a13e46151afc7764cabf382282856ada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-2373806207651534423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7934679508351492587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8249ee4e51c51241a2c3840a7a22ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 0}
+  lookAt: 0
+  timer: 0.9
 --- !u!1 &7934679508978107322
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,7 +260,7 @@ MeshCollider:
   m_GameObject: {fileID: 7934679508978107322}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -290,7 +306,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7934679509986406006}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
