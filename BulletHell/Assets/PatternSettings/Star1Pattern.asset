@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Star1Pattern
   m_EditorClassIdentifier: 
   mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  material: {fileID: 2100000, guid: efa00162fcabaaf449ee90f7c4b73e07, type: 2}
+  material: {fileID: 2100000, guid: 13cb3370174ade74b83be4c2b7f6b9bc, type: 2}
   plane: 1
   waitToStart: 0
   timeToPlayWhileWaiting: 0
