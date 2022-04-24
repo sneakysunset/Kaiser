@@ -13,7 +13,7 @@ public class ScoreManager : MonoBehaviour
     public RectTransform[] Hearts = new RectTransform[3];
     public float SafeTimer;
     bool safe;
-
+    
     private void Start()
     {
         hpValue = 3;
@@ -34,6 +34,7 @@ public class ScoreManager : MonoBehaviour
     {
         if (!safe)
         {
+            Sound.sound.PlayOneShot("event:/Player/Damage");
             Hearts[hpValue - 1].gameObject.SetActive(false);
             hpValue -= hpLoss;
             StartCoroutine(InvicibilityFrames(SafeTimer));
@@ -42,6 +43,11 @@ public class ScoreManager : MonoBehaviour
 
     public void endLevel()
     {
+        Sound.sound.PauseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Sound.sound.Music.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Sound.sound.PauseMusic.release();
+        Sound.sound.Music.release();
+        PlayerRenderer.gameObject.SetActive(false);
         GetComponent<Pause>().IsEndLevel();
     }
 

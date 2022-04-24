@@ -16,8 +16,8 @@ TagManager:
   - Player
   - Bullet
   - BarriereWalls
-  - 
-  - 
+  - Hotel
+  - HotelCollision
   - 
   - 
   - 

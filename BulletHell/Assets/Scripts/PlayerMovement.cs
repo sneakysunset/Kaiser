@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
         {
             FindObjectOfType<ScoreManager>().reduceHP(1);
         }
+
+
     }
 
    
