@@ -23,6 +23,7 @@ public class BulletInstancier : MonoBehaviour
         Sound.sound.PlayOneShot("event:/Ennemy/Spawn");
         instP = Instantiate(pSys,transform.position,Quaternion.identity).GetComponent<ParticleSystem>();
         instP.transform.parent = transform;
+        instP.Play();
     }
 
 
