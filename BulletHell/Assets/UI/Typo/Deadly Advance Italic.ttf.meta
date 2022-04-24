@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: f8ebc9d8830a06d4b8913114b5ce7912
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Deadly Advance
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 60e70cec8aa9b7e4182c2227724dd1db, type: 3}
+  - {fileID: 12800000, guid: 72bb15d215f09b043a00f0a169a89957, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

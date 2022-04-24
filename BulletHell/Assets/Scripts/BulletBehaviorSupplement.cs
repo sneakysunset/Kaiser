@@ -73,6 +73,8 @@ public class BulletBehaviorSupplement : MonoBehaviour
     IEnumerator endSpawn(float timer)
     {
         yield return new WaitForSeconds(timeBeforeStopSpawning);
+
+        if(this.tag != "Explosion")
         GetComponent<BulletInstancier>().spawning = false;
     }
 
