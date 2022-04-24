@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Water
-  m_Shader: {fileID: -6465566751694194690, guid: 43f00a4b095722e4f8d02b98f55adfa7, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: abeb88c50e42a3c4c8d42736784f6e01, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 2
@@ -47,7 +47,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _FoamSize: 1.38
+    - Boolean_0ef956543e3e4c138870d6ea2925958f: 1
+    - Vector1_17121f7cfa4c4e3fbbf23d6724753d81: 0.09
+    - Vector1_1b038343729f43039e3f5cd4f052c51d: 0
+    - Vector1_4e326a3d6e9145a4b002881bb88d267a: 0.208
+    - Vector1_8fd15c7fe8194751b51f6feb076c8839: 2.09
+    - Vector1_b1bbf401c14c4ea0977a6235b453266d: 0
+    - Vector1_c07528e17359402b9d87277a99694ad9: 25
+    - Vector1_d16209057a8845d082b80e27f24f5d14: -1.06
+    - Vector1_ee4b08bf83c84f67ad42d586ac939d38: 0
+    - Vector1_ef283a786408439d86eeab5b62a0feda: 0.7
+    - _FoamSize: 0.15
     - _Metallic: 0.81
     - _NormalIntensity: 36.9
     - _QueueControl: 0
@@ -55,8 +65,12 @@ Material:
     - _Smoothness: 0
     - _Water_Level: 1.74
     - _Water_Speed: 1
+    - _WaveScale: 1.45
     - _WavesSize: 0.04
     m_Colors:
+    - Color_16cf68fb19594ada80d8c515851fe88b: {r: 0.23113206, g: 0.5839068, b: 1, a: 1}
+    - Color_3043f69ecea7444e87c536a7a02c7d50: {r: 0.6665887, g: 1.962794, b: 2.569396, a: 0}
+    - Color_db0f5dd154424bd28387660b495b7fad: {r: 0.042452775, g: 0.06798736, b: 1, a: 1}
     - _BaseColor: {r: 0, g: 0.08219698, b: 0.20754719, a: 1}
     - _DeepWater: {r: 0, g: 0.015094344, b: 0.0754717, a: 1}
     - _FoamColor: {r: 0.08530617, g: 0.13937347, b: 0.254717, a: 1}
