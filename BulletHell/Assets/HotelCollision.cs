@@ -9,10 +9,11 @@ public class HotelCollision : MonoBehaviour
   
         if (collision.gameObject.layer == 9)
         {
-            /*FindObjectOfType<HotelManager>().HotelValueIncr();
-            FindObjectOfType<HotelManager>().TimeLineActivation();*/
-            
+            FindObjectOfType<HotelManager>().hotelValue++;
+            FindObjectOfType<HotelManager>().TimeLineActivation();
+
             Destroy(collision.transform.gameObject);
         }
     }
 }
+
