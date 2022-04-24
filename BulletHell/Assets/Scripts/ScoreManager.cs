@@ -13,7 +13,7 @@ public class ScoreManager : MonoBehaviour
     public RectTransform[] Hearts = new RectTransform[3];
     public float SafeTimer;
     bool safe;
-
+    
     private void Start()
     {
         hpValue = 3;
