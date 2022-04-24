@@ -26,7 +26,13 @@ public class ScoreManager : MonoBehaviour
         //hpText.text = "" + hpValue;
         progressionSlider.value += Time.deltaTime / FindObjectOfType<BarriereMovement>().timer;
         if (hpValue <= 0)
+        {
+            Sound.sound.PauseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            Sound.sound.Music.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            Sound.sound.PauseMusic.release();
+            Sound.sound.Music.release();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
 
