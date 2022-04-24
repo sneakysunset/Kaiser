@@ -48,10 +48,12 @@ Material:
     m_Ints: []
     m_Floats:
     - _FoamSize: 1.38
+    - _Metallic: 0.619
     - _NormalIntensity: 41.2
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Water_Level: 1
+    - _Smoothness: 0.861
+    - _Water_Level: 1.509
     - _Water_Speed: 1
     - _WavesSize: 0.06
     m_Colors:
