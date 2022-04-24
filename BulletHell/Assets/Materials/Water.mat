@@ -27,7 +27,7 @@ Material:
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2950
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -61,7 +61,7 @@ Material:
     - _Metallic: 0.81
     - _NormalIntensity: 36.9
     - _QueueControl: 0
-    - _QueueOffset: 0
+    - _QueueOffset: -50
     - _Smoothness: 0
     - _Water_Level: 1.74
     - _Water_Speed: 1
