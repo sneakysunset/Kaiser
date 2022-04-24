@@ -2795,6 +2795,10 @@ PrefabInstance:
       propertyPath: timeBeforeStopSpawning
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8281855049910241374, guid: 4559e37e66cdc3e4b99905dc64d84954, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4559e37e66cdc3e4b99905dc64d84954, type: 3}
 --- !u!4 &1773347211 stripped

@@ -19,11 +19,18 @@ public class BulletInstancier : MonoBehaviour
     {
         spawning = true;
         StartCoroutine(BulletSpawn(spawnTimer));
+        StartCoroutine(TrailActivation());
         Sound.sound.PlayOneShot("event:/Ennemy/Spawn");
         instP = Instantiate(pSys,transform.position,Quaternion.identity).GetComponent<ParticleSystem>();
         instP.transform.parent = transform;
     }
 
+
+    IEnumerator TrailActivation()
+    {
+        yield return new WaitForSeconds(0.5f);
+        transform.Find("Trail").gameObject.SetActive(true);
+    }
 
     IEnumerator BulletSpawn(float timer)
     {
@@ -34,7 +41,7 @@ public class BulletInstancier : MonoBehaviour
 
         if(spawning)
           StartCoroutine(BulletSpawn(timer));
-        else if (!spawning)
+        else
         {
             if(GetComponent<MeshRenderer>() != null)
             {
@@ -44,12 +51,10 @@ public class BulletInstancier : MonoBehaviour
             }
             else
             {
-                foreach(MeshRenderer mesh in gameObject.GetComponentsInChildren<MeshRenderer>())
-                {
-                    mesh.enabled = false;
-                    instP.Play();
-                    Sound.sound.PlayOneShot("event:/Ennemy/Spawn");
-                }
+                transform.Find("Poulpe").gameObject.SetActive(false);
+                instP.Play();
+                Sound.sound.PlayOneShot("event:/Ennemy/Spawn");
+             
             }
             //disappear = true;
 /*          startLerp = transform.position;
