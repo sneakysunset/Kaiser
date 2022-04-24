@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{261af324-1ef6-419f-a451-4b24e1d5bef4}">
+		<property name="assetPath">
+			<value>OST3 Part 2 A.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>12.229319727891156</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bf6def7b-c99a-4307-8d3a-9a0e6029948b}</destination>
+		</relationship>
+	</object>
+</objects>
