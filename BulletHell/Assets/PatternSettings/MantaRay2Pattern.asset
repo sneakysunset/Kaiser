@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MantaRay2Pattern
   m_EditorClassIdentifier: 
   mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  material: {fileID: 2100000, guid: 3707ab250fc9a264d83076f8101ae4b3, type: 2}
+  material: {fileID: 2100000, guid: 559fe04f9620a9d4f91c80b1e93c204a, type: 2}
   plane: 1
   waitToStart: 0
   timeToPlayWhileWaiting: 0
@@ -24,7 +24,7 @@ MonoBehaviour:
   size: 1
   colliderSize: 0.45
   angularVelocity: 0
-  startColor: {r: 0.11320752, g: 0.026599765, b: 0.020825913, a: 1}
+  startColor: {r: 0.62474805, g: 0.03413924, b: 0.003413924, a: 1}
   useColorOverTime: 0
   colorCurveUsage: 0
   colorCurveTime: 0
