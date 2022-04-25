@@ -148,6 +148,7 @@ public class Pause : MonoBehaviour
     public void NextLevel()
     {
         Sound.sound.PlayOneShot("event:/UI/SFX Button");
+        SceneManager.LoadScene("Level" + (SceneManager.GetActiveScene().buildIndex + 1));
     }
 
     public void MainMenu()
