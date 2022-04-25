@@ -11,11 +11,13 @@ public class PizzaTime : MonoBehaviour
     public float speed;
     public float timeToPlayPSys;
     bool pSysNotYetPlayed = true;
-    public ParticleSystem pSys;
+    public ParticleSystem pSysBubble;
+    public ParticleSystem pSysExplod;
     void Start()
     {
         ogPos = transform.position;
         targetPos = ogPos + new Vector3(0, -ogPos.y, 0);
+        pSysBubble.Play();
     }
 
 
@@ -30,7 +32,7 @@ public class PizzaTime : MonoBehaviour
         if(interpolationValue >= timeToPlayPSys && pSysNotYetPlayed)
         {
             pSysNotYetPlayed = false;
-            pSys.Play();
+            pSysExplod.Play();
         }
 
         if(interpolationValue >= 1)
