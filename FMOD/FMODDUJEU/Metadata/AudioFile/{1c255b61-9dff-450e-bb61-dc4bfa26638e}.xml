@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{1c255b61-9dff-450e-bb61-dc4bfa26638e}">
+		<property name="assetPath">
+			<value>SFX Rame 4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{bf6def7b-c99a-4307-8d3a-9a0e6029948b}</destination>
+		</relationship>
+	</object>
+</objects>
