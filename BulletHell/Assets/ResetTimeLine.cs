@@ -30,6 +30,10 @@ public class ResetTimeLine : MonoBehaviour
 
     public void StopOtherTimeLine()
     {
+        foreach(Animator anim in Espadons)
+        {
+            anim.gameObject.SetActive(false);
+        }
         TimeLine2.enabled = false;
     }
 }
