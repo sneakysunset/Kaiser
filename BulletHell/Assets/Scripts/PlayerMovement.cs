@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == 7)
+        if (other.gameObject.layer == 8)
         {
             FindObjectOfType<ScoreManager>().reduceHP(1);
         }

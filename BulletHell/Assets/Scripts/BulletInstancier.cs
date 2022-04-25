@@ -9,7 +9,6 @@ public class BulletInstancier : MonoBehaviour
     public float spawnTimer;
     public BulletManager BulletSpawner1;
     [SerializeField, HideInInspector]public bool spawning;
-    [SerializeField, HideInInspector]public bool disappear;
     Vector3 startLerp;
     Vector3 endLerp;
     public GameObject pSys;
@@ -26,6 +25,12 @@ public class BulletInstancier : MonoBehaviour
         instP.Play();
     }
 
+
+    public void EndSpawn()
+    {
+        spawning = false;
+        StartCoroutine(BulletSpawn(0));
+    }
 
     IEnumerator TrailActivation()
     {
@@ -57,19 +62,7 @@ public class BulletInstancier : MonoBehaviour
                 Sound.sound.PlayOneShot("event:/Ennemy/Spawn");
              
             }
-            //disappear = true;
-/*          startLerp = transform.position;
-            endLerp = transform.position - new Vector3(0, -20, 0);*/
         }
     }
 
-    private void Update()
-    {
-        if (disappear)
-        {
-            //t += Time.deltaTime;
-            
-            //transform.position = Vector3.Lerp(startLerp, endLerp, t);
-        }
-    }
 }
