@@ -19,15 +19,14 @@ public class HotelCollision : MonoBehaviour
         
         if (collision.gameObject.layer == 9)
         {
-            print(1);
+         
             FindObjectOfType<HotelManager>().hotelValue++;
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Progress", FindObjectOfType<HotelManager>().hotelValue);
             FindObjectOfType<HotelManager>().TimeLineActivation();
             currentHotel = collision.transform;
+            collision.collider.enabled = false;
             hotelTarget = currentHotel.position - new Vector3(0, 20, 0);
             collision.transform.parent.GetComponent<ParticleSystem>().Play();
-
-
-            //Destroy(collision.transform.gameObject);
         }
     }
 }
