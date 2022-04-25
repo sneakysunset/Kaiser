@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class RotateCannon : MonoBehaviour
 {
-    Transform player;
-
-    private void Start()
-    {
-        player = FindObjectOfType<PlayerMovement>().transform;
-    }
+    public Transform Target;
+    public float offTimer;
+    public float onTimer;
+    public bool lookAt;
+    public float rotateSpeed;
+    Quaternion look;
 
     void Update()
     {
-        transform.LookAt(new Vector3(player.position.x, transform.position.y, player.position.z));
-        transform.Rotate(0, 180, 0);
+        look = Quaternion.LookRotation(  transform.position -Target.position);
+        
+        transform.rotation = Quaternion.Slerp(transform.rotation, look, Time.deltaTime * rotateSpeed); 
+        //transform.Rotate(0, 180, 0);
+
+     
     }
 }
