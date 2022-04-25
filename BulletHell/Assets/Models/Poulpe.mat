@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_Projectil 2
+  m_Name: Poulpe
   m_Shader: {fileID: -6465566751694194690, guid: ec2745ee033ccb84d845acf491fd7b23, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -47,13 +47,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Metalic: 1
+    - _Metalic: 5
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Smothness: 1
     m_Colors:
     - _Basecolor: {r: 0, g: 0, b: 0, a: 0}
     - _Bottom: {r: 0, g: 0, b: 0, a: 0}
-    - _TopColor: {r: 3.2627451, g: 23.968628, b: 0, a: 1}
+    - _TopColor: {r: 18.07059, g: 0, b: 23.968628, a: 1}
     - _speed: {r: 0, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []

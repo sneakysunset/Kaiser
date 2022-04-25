@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_Projectil 1
+  m_Name: Ray
   m_Shader: {fileID: -6465566751694194690, guid: ec2745ee033ccb84d845acf491fd7b23, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
