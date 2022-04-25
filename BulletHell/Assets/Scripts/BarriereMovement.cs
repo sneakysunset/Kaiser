@@ -18,6 +18,11 @@ public class BarriereMovement : MonoBehaviour
         pause = scoreM.GetComponent<Pause>();
     }
 
+    public void StartTimer()
+    {
+        StartCoroutine(endSceneTimer(timer));
+    }
+
     private void Start()
     {
         //Sound.sound.PlayOneShot("event:/Music/OST1");
@@ -37,7 +42,7 @@ public class BarriereMovement : MonoBehaviour
     IEnumerator endSceneTimer(float timeBeforeEnd)
     {
         yield return new WaitForSeconds(timeBeforeEnd);
-        print(11);
+        
         pause.IsEndLevel();
     }
 
