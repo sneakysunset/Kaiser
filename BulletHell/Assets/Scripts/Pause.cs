@@ -14,7 +14,7 @@ public class Pause : MonoBehaviour
     public GameObject PauseMenu;
     public GameObject QuitMenu;
     public GameObject EndLevelMenu;
-
+    public Animator player;
     private void Update()
     {
         if (isPaused)
@@ -58,28 +58,53 @@ public class Pause : MonoBehaviour
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Volume", volumeSlider.value);
     }
 
-    public void StartLevel1()
+
+    public void startLevel1()
     {
-        SceneManager.LoadScene("Level 1");
+        StartCoroutine(StartLevel1());
+    }
+
+    public void startLevel2()
+    {
+        StartCoroutine(StartLevel2());
+    }
+
+    public void startLevel3()
+    {
+        StartCoroutine(StartLevel3());
+    }
+
+    IEnumerator StartLevel1()
+    {
         Sound.sound.PlayOneShot("event:/UI/SFX Button");
+        player.SetTrigger("Celebrate");
+        yield return new WaitForSeconds(1.3f);
+        SceneManager.LoadScene("Level 1");
         Sound.sound.PauseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         Sound.sound.Music.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         Sound.sound.PauseMusic.release();
         Sound.sound.Music.release();
     }
 
-    public void StartLevel2()
+
+
+
+    IEnumerator StartLevel2()
     {
         Sound.sound.PlayOneShot("event:/UI/SFX Button");
+        player.SetTrigger("Celebrate");
+        yield return new WaitForSeconds(1.3f);
         SceneManager.LoadScene("Level 2");
         Sound.sound.PauseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         Sound.sound.Music.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         Sound.sound.PauseMusic.release();
         Sound.sound.Music.release();
     }
-    public void StartLevel3()
+    IEnumerator StartLevel3()
     {
         Sound.sound.PlayOneShot("event:/UI/SFX Button");
+        player.SetTrigger("Celebrate");
+        yield return new WaitForSeconds(1.3f);
         SceneManager.LoadScene("Level 3");
         Sound.sound.PauseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         Sound.sound.Music.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
