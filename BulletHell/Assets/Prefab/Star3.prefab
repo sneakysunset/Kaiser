@@ -99,7 +99,6 @@ MonoBehaviour:
   spawnTimer: 0.3
   BulletSpawner1: {fileID: 3148693041566950101}
   spawning: 0
-  disappear: 0
   pSys: {fileID: 2954091556473693444, guid: 0e4237037af8d39408498a0d8688e394, type: 3}
 --- !u!114 &1420928033628192556
 MonoBehaviour:
@@ -144,7 +143,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3412081249407975303}
-  m_Mesh: {fileID: 8691780276856062721, guid: 104dc2e427d3c974bae7ea6e704a21e3, type: 3}
+  m_Mesh: {fileID: 3390558720134950976, guid: 50c77e0c816020f4f88e428c8eb7bf0d, type: 3}
 --- !u!23 &2451394821902207222
 MeshRenderer:
   m_ObjectHideFlags: 0
