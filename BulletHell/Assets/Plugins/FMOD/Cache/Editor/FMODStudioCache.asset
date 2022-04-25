@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: ../FMOD/FMODDUJEU/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637864542445286419
+  lastModified: 637864562273368075
   FileSizes:
   - Name: Desktop
-    Value: 3766400
+    Value: 4058208
   Exists: 1
 --- !u!114 &-6399870604923897683
 MonoBehaviour:
@@ -62,10 +62,10 @@ MonoBehaviour:
   Path: ../FMOD/FMODDUJEU/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637864542445316340
+  lastModified: 637864562273388021
   FileSizes:
   - Name: Desktop
-    Value: 1830
+    Value: 1878
   Exists: 1
 --- !u!114 &-6127683311952602770
 MonoBehaviour:
@@ -388,6 +388,7 @@ MonoBehaviour:
   - {fileID: -2295565594362311658}
   - {fileID: -3802557854561068450}
   - {fileID: 5048416498264669350}
+  - {fileID: 5830893054664314511}
   EditorParameters:
   - {fileID: 5931342767444341552}
   - {fileID: -4277664366367562282}
@@ -396,7 +397,7 @@ MonoBehaviour:
   - {fileID: -7370572900894438393}
   StringsBanks:
   - {fileID: -6399870604923897683}
-  cacheTime: 637864542445316340
+  cacheTime: 637864562273388021
   cacheVersion: 10
 --- !u!114 &629472593808330120
 MonoBehaviour:
@@ -665,6 +666,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5500
+--- !u!114 &5830893054664314511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Menu
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Menu
+  Guid:
+    Data1: -1866345398
+    Data2: 1110003610
+    Data3: -1876013933
+    Data4: 1857566325
+  Banks:
+  - {fileID: -7370572900894438393}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 24458
 --- !u!114 &5888808981429222662
 MonoBehaviour:
   m_ObjectHideFlags: 0
