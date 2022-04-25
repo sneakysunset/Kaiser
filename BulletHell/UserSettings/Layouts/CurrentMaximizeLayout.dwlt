@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 5479
+  controlID: 6086
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 5447
+  controlID: 6087
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 5448
+  controlID: 6078
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -505,9 +505,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 246.43927, y: 6.065788, z: 162.76465}
+    m_Target: {x: 246.34149, y: 1.7447622, z: 138.28377}
     speed: 2
-    m_Value: {x: 246.43927, y: 6.065788, z: 162.76465}
+    m_Value: {x: 246.34149, y: 1.7447622, z: 138.28377}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -554,9 +554,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.05305088, y: -0.032949354, z: -0.0017585886, w: 0.9980644}
+    m_Target: {x: 0.09241718, y: -0.16795172, z: 0.015810195, w: 0.9813449}
     speed: 2
-    m_Value: {x: -0.053049937, y: -0.03294877, z: -0.0017585574, w: 0.9980467}
+    m_Value: {x: 0.0924155, y: -0.16794865, z: 0.015809907, w: 0.981327}
   m_Size:
     m_Target: 15.012754
     speed: 2
@@ -2306,7 +2306,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 5384
+  controlID: 6088
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2375,22 +2375,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Models
+    - Assets/ANimation/Player
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Models
+  - Assets/ANimation/Player
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\lebre\Desktop\SecondSemestre\undertale\UndertaleMaisMieux\BulletHell
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 44}
-    m_SelectedIDs: b6650000
-    m_LastClickedID: 26038
-    m_ExpandedIDs: 00000000fa63000000ca9a3bffffff7f
+    m_SelectedIDs: 44660000
+    m_LastClickedID: 26180
+    m_ExpandedIDs: 00000000fa630000b0650000b665000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2443,10 +2443,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 5c74feff
-    m_LastClickedInstanceID: -101284
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c62300008e6400000000000052660000
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c62300008e6400000000000052660000fe5201001e540100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2585,10 +2585,10 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: 572
+    m_CachedPref: 425
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -101284
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
