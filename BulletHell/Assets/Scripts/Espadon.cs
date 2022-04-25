@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class Espadon : MonoBehaviour
 {
-    
+
+
+    private void OnEnable()
+    {
+        transform.Find("Splash").GetComponent<ParticleSystem>().Play();
+    }
     public void ChargeRay()
     {
+        
         Sound.sound.PlayOneShot("event:/Ennemy/Espadon/Charge");
     }
 

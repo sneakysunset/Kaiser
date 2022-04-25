@@ -7,6 +7,12 @@ public class HotelCollision : MonoBehaviour
     Vector3 hotelTarget;
     Transform currentHotel;
     public float hotelFallSpeed;
+    public HotelManager hotelM;
+
+    private void Awake()
+    {
+        hotelM = FindObjectOfType<HotelManager>();
+    }
     private void Update()
     {
         if(currentHotel != null)
@@ -19,10 +25,14 @@ public class HotelCollision : MonoBehaviour
         
         if (collision.gameObject.layer == 9)
         {
+            if(hotelM.hotelValue == 1)
+            {
+                hotelM.TimeLineDeActivation();
+            }
             StartCoroutine(towerFallSound());
-            FindObjectOfType<HotelManager>().hotelValue++;
-            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Progress", FindObjectOfType<HotelManager>().hotelValue);
-            FindObjectOfType<HotelManager>().TimeLineActivation();
+            hotelM.hotelValue++;
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Progress", hotelM.hotelValue);
+            hotelM.TimeLineActivation();
             currentHotel = collision.transform;
             collision.collider.enabled = false;
             hotelTarget = currentHotel.position - new Vector3(0, 20, 0);

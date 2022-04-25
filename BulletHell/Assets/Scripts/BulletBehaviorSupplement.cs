@@ -34,6 +34,12 @@ public class BulletBehaviorSupplement : MonoBehaviour
         }
     }
 
+    public void enderSpawn()
+    {
+       
+        StartCoroutine(endSpawn(0));
+    }
+
     private void Start()
     {
         if (lookAtDelay > 0)
@@ -73,9 +79,8 @@ public class BulletBehaviorSupplement : MonoBehaviour
     IEnumerator endSpawn(float timer)
     {
         yield return new WaitForSeconds(timeBeforeStopSpawning);
-
         if(this.tag != "Explosion")
-        GetComponent<BulletInstancier>().spawning = false;
+            GetComponent<BulletInstancier>().spawning = false;
     }
 
 
