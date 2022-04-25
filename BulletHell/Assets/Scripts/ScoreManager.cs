@@ -13,6 +13,7 @@ public class ScoreManager : MonoBehaviour
     public RectTransform[] Hearts = new RectTransform[3];
     public float SafeTimer;
     bool safe;
+    public ParticleSystem deathPSys;
     
     private void Start()
     {
@@ -27,14 +28,23 @@ public class ScoreManager : MonoBehaviour
         progressionSlider.value += Time.deltaTime / FindObjectOfType<BarriereMovement>().timer;
         if (hpValue <= 0)
         {
-            Sound.sound.PauseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-            Sound.sound.Music.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-            Sound.sound.PauseMusic.release();
-            Sound.sound.Music.release();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            StartCoroutine(Death());
         }
     }
 
+
+    IEnumerator Death()
+    {
+        Destroy(FindObjectOfType<PlayerMovement>().transform.Find("Happy_Idle").gameObject);
+        FindObjectOfType<PlayerMovement>().transform.Find("Death").GetComponent<ParticleSystem>().Play();
+        
+        yield return new WaitForSeconds(1.3f);
+        Sound.sound.PauseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Sound.sound.Music.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Sound.sound.PauseMusic.release();
+        Sound.sound.Music.release();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 
     public void reduceHP(int hpLoss)
     {

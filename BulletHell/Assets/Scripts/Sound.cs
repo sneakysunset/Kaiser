@@ -20,10 +20,11 @@ public class Sound : MonoBehaviour
     {
         MainMusic1 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST1");
         MainMusic2 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST2");
-//        MainMusic3 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST3");*/
+        MainMusic3 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST3");
+        MainMenuMusic = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Menu");
         Pause1 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST1_Pause");
         Pause2 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST2_Pause");
-//        Pause3 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST3_Pause");*/
+        Pause3 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST3_Pause");
 
         if (SceneManager.GetActiveScene().name == "Level 1")
         {
@@ -39,7 +40,13 @@ public class Sound : MonoBehaviour
         {
             Music = MainMusic3;
             PauseMusic = Pause3;
+        }        
+        if(SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            Music = MainMenuMusic;
+            PauseMusic = Pause3;
         }
+
 
         Music.start();
         PauseMusic.start();

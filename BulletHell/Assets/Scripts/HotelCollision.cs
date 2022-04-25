@@ -19,16 +19,22 @@ public class HotelCollision : MonoBehaviour
         
         if (collision.gameObject.layer == 9)
         {
-            print(1);
+            StartCoroutine(towerFallSound());
             FindObjectOfType<HotelManager>().hotelValue++;
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Progress", FindObjectOfType<HotelManager>().hotelValue);
             FindObjectOfType<HotelManager>().TimeLineActivation();
             currentHotel = collision.transform;
+            collision.collider.enabled = false;
             hotelTarget = currentHotel.position - new Vector3(0, 20, 0);
             collision.transform.parent.GetComponent<ParticleSystem>().Play();
-
-
-            //Destroy(collision.transform.gameObject);
         }
+    }
+
+    IEnumerator towerFallSound()
+    {
+        Sound.sound.PlayOneShot("event:/TowerDestroy");
+        yield return new WaitForSeconds(.8f);
+        Sound.sound.PlayOneShot("event:/TowerDestroy Splash");
     }
 }
 

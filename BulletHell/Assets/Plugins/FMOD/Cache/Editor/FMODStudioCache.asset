@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: ../FMOD/FMODDUJEU/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637864445609660214
+  lastModified: 637864562273368075
   FileSizes:
   - Name: Desktop
-    Value: 1955840
+    Value: 4058208
   Exists: 1
 --- !u!114 &-6399870604923897683
 MonoBehaviour:
@@ -62,10 +62,10 @@ MonoBehaviour:
   Path: ../FMOD/FMODDUJEU/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637864441155829905
+  lastModified: 637864562273388021
   FileSizes:
   - Name: Desktop
-    Value: 1688
+    Value: 1878
   Exists: 1
 --- !u!114 &-6127683311952602770
 MonoBehaviour:
@@ -146,6 +146,33 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-3802557854561068450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TowerDestroy Splash
+  m_EditorClassIdentifier: 
+  Path: event:/TowerDestroy Splash
+  Guid:
+    Data1: 1083901217
+    Data2: 1274461859
+    Data3: -236297855
+    Data4: 535644685
+  Banks:
+  - {fileID: -7370572900894438393}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1250
 --- !u!114 &-3414750994969924901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,6 +303,54 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &-652858983819302167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OST3/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 4251318614
+    data2: 3558628423
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-200010717036904386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  StudioPath: parameter:/Progress
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 4251318614
+    data2: 3558628423
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,14 +386,18 @@ MonoBehaviour:
   - {fileID: 6875003237659864816}
   - {fileID: 8073878635646870810}
   - {fileID: -2295565594362311658}
+  - {fileID: -3802557854561068450}
+  - {fileID: 5048416498264669350}
+  - {fileID: 5830893054664314511}
   EditorParameters:
   - {fileID: 5931342767444341552}
   - {fileID: -4277664366367562282}
+  - {fileID: -200010717036904386}
   MasterBanks:
   - {fileID: -7370572900894438393}
   StringsBanks:
   - {fileID: -6399870604923897683}
-  cacheTime: 637864445609660214
+  cacheTime: 637864562273388021
   cacheVersion: 10
 --- !u!114 &629472593808330120
 MonoBehaviour:
@@ -533,6 +612,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1250
+--- !u!114 &5048416498264669350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TowerDestroy
+  m_EditorClassIdentifier: 
+  Path: event:/TowerDestroy
+  Guid:
+    Data1: -1629249568
+    Data2: 1198493901
+    Data3: 771231141
+    Data4: -799653520
+  Banks:
+  - {fileID: -7370572900894438393}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1584
 --- !u!114 &5787000485375799745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -560,6 +666,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5500
+--- !u!114 &5830893054664314511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Menu
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Menu
+  Guid:
+    Data1: -1866345398
+    Data2: 1110003610
+    Data3: -1876013933
+    Data4: 1857566325
+  Banks:
+  - {fileID: -7370572900894438393}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 24458
 --- !u!114 &5888808981429222662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -632,13 +765,14 @@ MonoBehaviour:
     Data4: 1076719815
   Banks:
   - {fileID: -7370572900894438393}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
-  Parameters: []
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -652858983819302167}
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 117707
 --- !u!114 &7710088123984308342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -713,10 +847,35 @@ MonoBehaviour:
     Data4: -52308826
   Banks:
   - {fileID: -7370572900894438393}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
-  Parameters: []
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8971562042803601912}
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 12229
+--- !u!114 &8971562042803601912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OST3_Pause/Paused
+  m_EditorClassIdentifier: 
+  Name: Paused
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 587685013
+    data2: 2913089265
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
