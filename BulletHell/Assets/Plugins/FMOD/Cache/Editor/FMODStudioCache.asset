@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: ../FMOD/FMODDUJEU/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637864439525441532
+  lastModified: 637864477841614354
   FileSizes:
   - Name: Desktop
-    Value: 1091264
+    Value: 3730784
   Exists: 1
 --- !u!114 &-6399870604923897683
 MonoBehaviour:
@@ -62,10 +62,10 @@ MonoBehaviour:
   Path: ../FMOD/FMODDUJEU/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637864439525466579
+  lastModified: 637864477841654238
   FileSizes:
   - Name: Desktop
-    Value: 1516
+    Value: 1738
   Exists: 1
 --- !u!114 &-6127683311952602770
 MonoBehaviour:
@@ -146,6 +146,85 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &-3414750994969924901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/OST2_Pause
+  m_EditorClassIdentifier: 
+  Path: event:/Music/OST2_Pause
+  Guid:
+    Data1: 1954465282
+    Data2: 1146445633
+    Data3: 1796621185
+    Data4: -1529521616
+  Banks:
+  - {fileID: -7370572900894438393}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2436803422197266483}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12229
+--- !u!114 &-2436803422197266483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OST2_Pause/Paused
+  m_EditorClassIdentifier: 
+  Name: Paused
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 587685013
+    data2: 2913089265
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-2295565594362311658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/OST2
+  m_EditorClassIdentifier: 
+  Path: event:/Music/OST2
+  Guid:
+    Data1: -278923307
+    Data2: 1126674080
+    Data3: 699820701
+    Data4: -1264598283
+  Banks:
+  - {fileID: -7370572900894438393}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 55796
 --- !u!114 &-954221518277967050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,6 +276,54 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &-652858983819302167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OST3/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 4251318614
+    data2: 3558628423
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-200010717036904386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Progress
+  m_EditorClassIdentifier: 
+  Name: Progress
+  StudioPath: parameter:/Progress
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 4251318614
+    data2: 3558628423
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,14 +355,19 @@ MonoBehaviour:
   - {fileID: 1859064923892189642}
   - {fileID: 879142376165404890}
   - {fileID: -6127683311952602770}
+  - {fileID: -3414750994969924901}
+  - {fileID: 6875003237659864816}
+  - {fileID: 8073878635646870810}
+  - {fileID: -2295565594362311658}
   EditorParameters:
   - {fileID: 5931342767444341552}
   - {fileID: -4277664366367562282}
+  - {fileID: -200010717036904386}
   MasterBanks:
   - {fileID: -7370572900894438393}
   StringsBanks:
   - {fileID: -6399870604923897683}
-  cacheTime: 637864439525466579
+  cacheTime: 637864477841654238
   cacheVersion: 10
 --- !u!114 &629472593808330120
 MonoBehaviour:
@@ -529,6 +661,34 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &6875003237659864816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/OST3
+  m_EditorClassIdentifier: 
+  Path: event:/Music/OST3
+  Guid:
+    Data1: -287751991
+    Data2: 1190751435
+    Data3: -856089697
+    Data4: 1076719815
+  Banks:
+  - {fileID: -7370572900894438393}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -652858983819302167}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 117707
 --- !u!114 &7710088123984308342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -583,3 +743,55 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 250
+--- !u!114 &8073878635646870810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/OST3_Pause
+  m_EditorClassIdentifier: 
+  Path: event:/Music/OST3_Pause
+  Guid:
+    Data1: -1322912307
+    Data2: 1143581235
+    Data3: 1682695073
+    Data4: -52308826
+  Banks:
+  - {fileID: -7370572900894438393}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8971562042803601912}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12229
+--- !u!114 &8971562042803601912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/OST3_Pause/Paused
+  m_EditorClassIdentifier: 
+  Name: Paused
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 587685013
+    data2: 2913089265
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1

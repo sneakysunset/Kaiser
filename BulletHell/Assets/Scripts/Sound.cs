@@ -19,11 +19,11 @@ public class Sound : MonoBehaviour
     private void Awake()
     {
         MainMusic1 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST1");
-/*        MainMusic2 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST2");
-        MainMusic3 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST3");*/
+        MainMusic2 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST2");
+        MainMusic3 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST3");
         Pause1 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST1_Pause");
-/*        Pause2 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST2_Pause");
-        Pause3 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST3_Pause");*/
+        Pause2 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST2_Pause");
+        Pause3 = FMODUnity.RuntimeManager.CreateInstance("event:/Music/OST3_Pause");
 
         if (SceneManager.GetActiveScene().name == "Level 1")
         {

@@ -62,17 +62,29 @@ public class Pause : MonoBehaviour
     {
         SceneManager.LoadScene("Level 1");
         Sound.sound.PlayOneShot("event:/UI/SFX Button");
+        Sound.sound.PauseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Sound.sound.Music.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Sound.sound.PauseMusic.release();
+        Sound.sound.Music.release();
     }
 
     public void StartLevel2()
     {
         Sound.sound.PlayOneShot("event:/UI/SFX Button");
         SceneManager.LoadScene("Level 2");
+        Sound.sound.PauseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Sound.sound.Music.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Sound.sound.PauseMusic.release();
+        Sound.sound.Music.release();
     }
     public void StartLevel3()
     {
         Sound.sound.PlayOneShot("event:/UI/SFX Button");
         SceneManager.LoadScene("Level 3");
+        Sound.sound.PauseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Sound.sound.Music.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Sound.sound.PauseMusic.release();
+        Sound.sound.Music.release();
     }
 
     void Inputs()
@@ -97,6 +109,10 @@ public class Pause : MonoBehaviour
     {
         Sound.sound.PlayOneShot("event:/UI/SFX Button");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Sound.sound.PauseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Sound.sound.Music.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Sound.sound.PauseMusic.release();
+        Sound.sound.Music.release();
     }
 
     public void NextLevel()
@@ -108,6 +124,10 @@ public class Pause : MonoBehaviour
     {
         Sound.sound.PlayOneShot("event:/UI/SFX Button back");
         SceneManager.LoadScene("MainMenu");
+        Sound.sound.PauseMusic.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Sound.sound.Music.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        Sound.sound.PauseMusic.release();
+        Sound.sound.Music.release();
     }
 
     public void Resume()

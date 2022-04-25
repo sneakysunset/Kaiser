@@ -24,7 +24,7 @@ MonoBehaviour:
   size: 1
   colliderSize: 0.45
   angularVelocity: 0
-  startColor: {r: 1, g: 0, b: 0, a: 1}
+  startColor: {r: 0.11320752, g: 0.026599765, b: 0.020825913, a: 1}
   useColorOverTime: 0
   colorCurveUsage: 0
   colorCurveTime: 0

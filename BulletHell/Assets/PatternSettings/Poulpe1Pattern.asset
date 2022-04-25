@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Poulpe1Pattern
   m_EditorClassIdentifier: 
   mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
-  material: {fileID: 2100000, guid: c2e2ddcbdeab04711bb4faf283dd1910, type: 2}
+  material: {fileID: 2100000, guid: 439d0e737bd587149a492e1058448cf3, type: 2}
   plane: 1
   waitToStart: 0
   timeToPlayWhileWaiting: 0
@@ -24,7 +24,7 @@ MonoBehaviour:
   size: 1
   colliderSize: 0.45
   angularVelocity: 0
-  startColor: {r: 1, g: 0, b: 0, a: 1}
+  startColor: {r: 0.62474805, g: 0.03413924, b: 0.003413924, a: 1}
   useColorOverTime: 0
   colorCurveUsage: 0
   colorCurveTime: 0

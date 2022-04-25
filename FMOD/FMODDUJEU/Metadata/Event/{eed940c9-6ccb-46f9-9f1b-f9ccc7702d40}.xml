@@ -139,6 +139,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{0a77d145-32b2-4aaf-b89b-3b30eef6e1e2}">
+		<property name="volume">
+			<value>-32</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{883b8a37-2ac3-49a1-8fcc-a2dfe973d745}</destination>
 		</relationship>
@@ -633,7 +636,7 @@
 	</object>
 	<object class="ParameterCondition" id="{887dafb9-ec4a-46c3-8fe0-a040c0985ff1}">
 		<property name="minimum">
-			<value>3</value>
+			<value>4</value>
 		</property>
 		<property name="maximum">
 			<value>4</value>
@@ -658,7 +661,7 @@
 	</object>
 	<object class="ParameterCondition" id="{a5d15abc-4846-4927-afb1-1bce8d64deb5}">
 		<property name="minimum">
-			<value>2</value>
+			<value>3</value>
 		</property>
 		<property name="maximum">
 			<value>4</value>
