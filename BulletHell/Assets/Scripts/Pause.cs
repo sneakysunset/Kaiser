@@ -9,12 +9,17 @@ public class Pause : MonoBehaviour
     bool isPaused;
     bool isQuit;
     bool isEndLevel;
-
+    public static float volumeValue = 1;
     public Slider volumeSlider;
     public GameObject PauseMenu;
     public GameObject QuitMenu;
     public GameObject EndLevelMenu;
     public Animator player;
+
+    private void Awake()
+    {
+        volumeSlider.value = Pause.volumeValue;
+    }
     private void Update()
     {
         if (isPaused)
@@ -54,7 +59,7 @@ public class Pause : MonoBehaviour
 
     void VolumeSlider()
     {
-
+        Pause.volumeValue = volumeSlider.value;
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Volume", volumeSlider.value);
     }
 
