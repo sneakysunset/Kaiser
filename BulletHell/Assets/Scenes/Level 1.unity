@@ -3651,11 +3651,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5066722842745082228, guid: 4d534fe69cd3b78468b511def33e8d69, type: 3}
       propertyPath: m_Color.g
-      value: 0.6179246
+      value: 0.24056602
       objectReference: {fileID: 0}
     - target: {fileID: 5066722842745082228, guid: 4d534fe69cd3b78468b511def33e8d69, type: 3}
       propertyPath: m_Color.r
-      value: 0.6448042
+      value: 0.28754142
       objectReference: {fileID: 0}
     - target: {fileID: 5507994372591471255, guid: 4d534fe69cd3b78468b511def33e8d69, type: 3}
       propertyPath: m_AnchorMax.y
