@@ -54,6 +54,6 @@ Material:
     m_Colors:
     - _Basecolor: {r: 0, g: 0, b: 0, a: 0}
     - _Bottom: {r: 0, g: 0, b: 0, a: 0}
-    - _TopColor: {r: 0, g: 10.046179, b: 23.968628, a: 1}
+    - _TopColor: {r: 4.584382, g: 1.962265, b: 32, a: 1}
     - _speed: {r: 0, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
