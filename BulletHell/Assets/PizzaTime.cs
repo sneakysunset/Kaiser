@@ -18,6 +18,7 @@ public class PizzaTime : MonoBehaviour
         ogPos = transform.position;
         targetPos = ogPos + new Vector3(0, -ogPos.y, 0);
         pSysBubble.Play();
+        Sound.sound.PlayOneShot("event:/Ennemy/Boss Spawn");
     }
 
 
@@ -25,6 +26,7 @@ public class PizzaTime : MonoBehaviour
     {
         if (moving)
         {
+            FindObjectOfType<ScreenShake>().startCoroutine(.1f,.3f);
             interpolationValue += Time.deltaTime * speed;
             transform.position = Vector3.Lerp(ogPos, targetPos, interpolationValue);
         }

@@ -14,7 +14,7 @@ public class Sound : MonoBehaviour
     FMOD.Studio.EventInstance Pause3;
     public FMOD.Studio.EventInstance Music;
     public FMOD.Studio.EventInstance PauseMusic;
-
+    public int numberOfSounds;
 
     private void Awake()
     {
@@ -58,15 +58,23 @@ public class Sound : MonoBehaviour
         }
         else
         {
+            
             Destroy(this.gameObject);
         }
     }
 
-
+    IEnumerator SoundDenier(string eventName)
+    {
+        numberOfSounds++;
+        if (numberOfSounds < 3)
+            FMODUnity.RuntimeManager.PlayOneShot(eventName);
+        yield return new WaitForSeconds(.0001f);
+        numberOfSounds = 0;
+    }
 
 
     public void PlayOneShot(string eventName)
     {
-        FMODUnity.RuntimeManager.PlayOneShot( eventName);
+        StartCoroutine(SoundDenier(eventName));       
     }
 }

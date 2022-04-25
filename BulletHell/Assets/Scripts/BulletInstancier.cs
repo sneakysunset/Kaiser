@@ -35,7 +35,8 @@ public class BulletInstancier : MonoBehaviour
     IEnumerator TrailActivation()
     {
         yield return new WaitForSeconds(0.5f);
-        transform.Find("Trail").gameObject.SetActive(true);
+        if(transform.Find("Trail")!= null)
+            transform.Find("Trail").gameObject.SetActive(true);
     }
 
     IEnumerator BulletSpawn(float timer)

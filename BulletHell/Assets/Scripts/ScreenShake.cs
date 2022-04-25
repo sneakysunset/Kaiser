@@ -5,7 +5,10 @@ using UnityEngine;
 public class ScreenShake : MonoBehaviour
 {
 
-
+    public void startCoroutine(float duration, float magnitude)
+    {
+        StartCoroutine(Shake(duration, magnitude));
+    }
 
     public IEnumerator Shake(float duration, float magnitude)
     {

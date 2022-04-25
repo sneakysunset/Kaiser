@@ -8,11 +8,21 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody radeauRb;
     public float moveSpeed;
     Vector2 normals;
-
+    bool playMoveSound = true;
+    public GameObject jetPack;
     public Animator anim;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+    }
+
+
+    IEnumerator playPonctualSound(string name, float timer)
+    {
+        playMoveSound = false;
+        yield return new WaitForSeconds(timer);
+        playMoveSound = true;
+        Sound.sound.PlayOneShot(name);
     }
 
     private void Update()
@@ -23,6 +33,28 @@ public class PlayerMovement : MonoBehaviour
         bool message;
         message = rb.velocity.magnitude > 0 ? true : false;
         anim.SetBool("Run", message);
+
+
+
+        if(anim.GetBool("Run") && !anim.GetBool("Cow") && playMoveSound && (!jetPack.activeSelf || jetPack == null))
+        {
+            
+            StartCoroutine(playPonctualSound("event:/Player/Step", .2f));
+        }
+
+        if (anim.GetBool("Cow") && playMoveSound && (!jetPack.activeSelf || jetPack == null))
+        {
+            StartCoroutine(playPonctualSound("event:/Player/Rame", .2f));
+        }
+
+        if(jetPack != null)
+        {
+            if (jetPack.activeSelf && playMoveSound)
+            {
+               Sound.sound.PlayOneShot("event:/Player/JetPack");
+                playMoveSound = false;
+            }
+        }
     }
 
     private void FixedUpdate()
@@ -38,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == 8)
+        if (other.gameObject.layer == 7)
         {
             FindObjectOfType<ScoreManager>().reduceHP(1);
         }

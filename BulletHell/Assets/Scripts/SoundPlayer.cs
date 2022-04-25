@@ -10,21 +10,21 @@ public class SoundPlayer : MonoBehaviour
 
     public void PlayOneShotStar(int i, BulletContainer bC)
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Ennemy/Etoile/Tir");
+       Sound.sound.PlayOneShot("event:/Ennemy/Etoile/Tir");
     }
 
     public void PlayOneShotPoulpe(int i, BulletContainer bC)
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Ennemy/Poulpe/Tir");
+       Sound.sound.PlayOneShot("event:/Ennemy/Poulpe/Tir");
     }
 
     public void PlayOneShotRaie(int i, BulletContainer bC)
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Ennemy/Raie/Tir");
+        Sound.sound.PlayOneShot("event:/Ennemy/Raie/Tir");
     }
 
     public void PlayOneShotBomb(int i, BulletContainer bC)
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/Ennemy/Bombe/Tir");
+        Sound.sound.PlayOneShot("event:/Ennemy/Bombe/Tir");
     }
 }
