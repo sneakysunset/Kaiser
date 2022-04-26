@@ -29,7 +29,7 @@ public class BossTime : MonoBehaviour
         radeauBool = true;
         jetPack.SetActive(true);
         bossTimeLine.enabled = true;
-        radeau.GetComponent<BarriereMovement>().timer = 25;
+        radeau.GetComponent<BarriereMovement>().timer = 36;
         radeau.GetComponent<BarriereMovement>().StartTimer();
     }
 
